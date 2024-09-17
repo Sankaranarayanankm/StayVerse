@@ -1,0 +1,43 @@
+.banner {
+  height: 50vh;
+  position: relative;
+  background:url("https://www.travelandleisure.com/thmb/duE7mJB2qh7_R1UcSZ8MH1yN5yk=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/TAL-airbnb-listing-NEWAIRBNB1123-a67a0e07c4e846e2ae4e653d201e47af.jpg");
+}
+
+.banner__info {
+  background-color: black;
+  color: white;
+  padding: 25vh 50px 50px 40px;
+  width: 300px;
+}
+
+.banner__info >button {
+  background-color: #ff7779;
+  color: white;
+  text-transform: inherit;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.banner__info >button:hover {
+  background-color: white;
+  color: #ff7779;
+}
+
+.banner__search{
+  /* top:0; */
+  display: flex;
+  flex-direction: column;
+
+}
+
+.banner__searchButton{
+  background-color: white !important;
+  font-weight: 900 !important;
+  text-transform: inherit !important;
+  color: #ff7779 !important;
+}
+
+.banner__info >h5 {
+  margin-top: 10px;
+}
