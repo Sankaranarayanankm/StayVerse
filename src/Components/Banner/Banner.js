@@ -1,22 +1,30 @@
 import React, { useState } from "react";
 import "./Banner.css";
-import {Button} from '@mui/material'
+import { Button } from "@mui/material";
+import Search from "../Search/Search";
 
 const Banner = () => {
-  const [showSearch,setShowSearch]=useState(false);
-  
+  const [showSearch, setShowSearch] = useState(false);
+
   return (
     <div className="banner">
       <div className="banner__search">
-        {showSearch && <h1>SHOW DATE PICKER</h1>}
-        <Button onClick={()=>setShowSearch(!showSearch)} variant="outlined" className="banner__searchButton">Search Dates</Button>
+        {showSearch && <Search />}
+
+        <Button
+          onClick={() => setShowSearch(!showSearch)}
+          variant="outlined"
+          className="banner__searchButton"
+        >
+          {showSearch ? "Hide" : "Search Dates"}
+        </Button>
       </div>
       <div className="banner__info">
-        <h1>Get out and Stretch you imagination</h1>
+        <h1>Get out and stretch your imagination</h1>
         <h5>
-          Plan a different kind of getaway to uncover the hiddem gems near you.
+          Plan a different kind of getaway to uncover the hidden gems near you.
         </h5>
-        <Button variant="outlined">Expore Nearby</Button>
+        <Button variant="outlined">Explore Nearby</Button>
       </div>
     </div>
   );

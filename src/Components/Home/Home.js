@@ -6,6 +6,11 @@ const Home = () => {
   return (
     <div className="home">
       <Banner />
+      <div className="home__section">
+        <Card />
+        <Card />
+        <Card />
+      </div>
     </div>
   );
 };
