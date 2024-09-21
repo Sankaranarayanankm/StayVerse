@@ -2,20 +2,23 @@ import "./App.css";
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 import Home from "./Components/Home/Home";
+import { Route, Switch } from "react-router-dom";
+import SearchPage from "./Components/SearchPage/SearchPage";
 
 function App() {
   return (
     <div className="app">
-      {/* Home Component  */}
       <Header />
-      <Home />
-      {/* header  */}
-      {/* Banner  */}
-      {/* Search  */}
-      {/* cards  */}
-      {/* footer  */}
+
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/search">
+          <SearchPage />
+        </Route>
+      </Switch>
       <Footer />
-      {/* Search Page  */}
     </div>
   );
 }
