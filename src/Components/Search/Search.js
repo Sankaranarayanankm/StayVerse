@@ -6,12 +6,14 @@ import "react-date-range/dist/styles.css"; // Main style file
 import "react-date-range/dist/theme/default.css"; // Theme css file
 import { People } from "@mui/icons-material";
 import { Button } from "@mui/material";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
 // DATE PICKER COMPONENT
 // install react-date-range for the date picker
 const Search = () => {
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
+  const history = useHistory();
 
   const selectionRange = {
     startDate: startDate,
@@ -32,7 +34,7 @@ const Search = () => {
         <People />
       </h2>
       <input min={0} defaultValue={2} type="number" />
-      <Button>Search</Button>
+      <Button onClick={() => history.push("/search")}>Search</Button>
     </div>
   );
 };

@@ -4,14 +4,17 @@ import SearchIcon from "@mui/icons-material/Search";
 import LanguageIcon from "@mui/icons-material/Language";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div className="header">
-      <img
-        className="header__icon"
-        src="https://img.freepik.com/premium-vector/wanderlust-adventure-logo_18591-45414.jpg?w=900"
-        alt="Travel logo"
-      />
+      <Link to="/">
+        <img
+          className="header__icon"
+          src="https://img.freepik.com/premium-vector/wanderlust-adventure-logo_18591-45414.jpg?w=900"
+          alt="Travel logo"
+        />
+      </Link>
 
       <div className="header__center">
         <input type="text" />
