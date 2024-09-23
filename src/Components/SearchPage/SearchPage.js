@@ -55,7 +55,6 @@ const searchResults = [
 const SearchPage = () => {
   return (
     <div className="searchPage">
-      <h1>I'm Search Page</h1>
       <div className="searchPage__info">
         <p>62 stays . 26 augest to 30 august. 2 guests</p>
         <h1>Stays Nearby</h1>
